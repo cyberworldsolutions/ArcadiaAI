@@ -1,4 +1,5 @@
-﻿import { createClient } from '@supabase/supabase-js';
+// app/lib/supabase-browser.ts
+import { createClient } from '@supabase/supabase-js';
 
 export const browserSupabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
