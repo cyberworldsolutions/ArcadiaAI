@@ -1,8 +1,8 @@
-export default function Dashboard() {
+export default function DashboardPage() {
   return (
-    <div className="p-8">
-      <h1 className="text-3xl font-bold">AI Agency Suite</h1>
-      <p className="mt-2 text-gray-600">Welcome to your dashboard.</p>
+    <div style={{ padding: 40 }}>
+      <h1>Welcome to your dashboard</h1>
+      <p>Your auth system is working.</p>
     </div>
   );
 }
