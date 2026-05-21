@@ -1,7 +1,13 @@
-import { supabase } from "../lib/supabase";
+import React from "react";
 import { redirect } from "next/navigation";
+import { getSupabase } from '@/app/lib/supabase';
+const supabase = getSupabase();
 
-export default async function DashboardLayout({ children }) {
+export default async function DashboardLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const {
     data: { session },
   } = await supabase.auth.getSession();
@@ -10,5 +16,10 @@ export default async function DashboardLayout({ children }) {
     redirect("/auth");
   }
 
-  return <>{children}</>;
+  return (
+    <div>
+      {/* your layout markup */}
+      {children}
+    </div>
+  );
 }
