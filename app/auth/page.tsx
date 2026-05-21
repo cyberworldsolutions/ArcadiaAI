@@ -1,7 +1,7 @@
-"use client";
+'use client';
+
 
 import { useState } from "react";
-'use client';
 import { browserSupabase } from '../lib/supabase-browser';
 
 export default function AuthPage() {
